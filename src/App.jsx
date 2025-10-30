@@ -57,13 +57,37 @@ function App() {
           <h4>Trusted by 13,000+ customers worldwide</h4>
         </div>
         <div className="partner-section">
-          <img src={P1} className="item item1" />
-          <img src={P2} className="item item2" />
-          <img src={P3} className="item item3" />
-          <img src={P4} className="item item4" />
-          <img src={P5} className="item item5" />
-          <img src={P6} className="item item6" />
+          <h1 className="item item1">DELL</h1>
+          <h1 className="item item2">HP</h1>
+          <h1 className="item item3">MICROSOFT</h1>
+          <h1 className="item item4">ZOHO</h1>
+          <h1 className="item item5">WIPRO</h1>
+          <h1 className="item item6">JCB</h1>
         </div>
+      </section>
+      <section className="new-updates">
+        <h2>OUR NEW UPDATES</h2>
+        <div className="update-card-ctn">
+          <div className="update-card">
+            <p>Internships</p>
+          </div>
+          <div className="update-card">
+            <p>Job</p>
+          </div>
+          <div className="update-card">
+            <p>New Product</p>
+          </div>
+          <div className="update-card">
+            <p>New Service</p>
+          </div>
+          <div className="update-card">
+            <p>New Information</p>
+          </div>
+          <div className="update-card">
+            <p>New Branch</p>
+          </div>
+        </div>
+        <a className="btn secondaryBtn">More Updates</a>
       </section>
     </>
   );

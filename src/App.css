@@ -148,6 +148,7 @@ img{
 }
 .secondaryBtn:hover{
   background-color: var(--secondaryColor);
+  color: white;
 }
 
 .secondaryBtn{
