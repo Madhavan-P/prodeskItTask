@@ -184,15 +184,12 @@ header{
     text-align: center;
 }
 
-.new-updates h2{
-    /* text-align: left; */
-}
 
 .update-card-ctn{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 2rem;
-    margin-block: 2rem;
+    margin-block: 3rem;
     padding: 0rem 0;
 }
 
@@ -205,7 +202,7 @@ header{
     border-radius: 1rem;
     transition: all .3s linear;
     font-size: 1rem;
-    color: var(--primaryColor);
+    /* color: var(--primaryColor); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,6 +212,11 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.update-card p{
+    color: var(--primaryColor);
 }
 
 .update-card-container:hover{
@@ -223,9 +225,7 @@ header{
     color: rgba(0, 0, 0, .8);
 }
 
-.update-card-container:hover .border{
-    background-color: var(--secondaryColor);
-}
+
 
 
 .card-icon{
@@ -257,6 +257,12 @@ small{
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.update-card-container:hover .border {
+    background-color: var(--secondaryColor);
+    animation-play-state: running;
 }
 
 @keyframes rotate{
@@ -266,4 +272,8 @@ small{
     to{
         transform: rotate(360deg);
     }
+}
+
+.update-card-container:hover .update-card p{
+    /* color: var(--secondaryColor); */
 }
