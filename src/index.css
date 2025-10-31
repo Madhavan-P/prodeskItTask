@@ -1,4 +1,6 @@
 header{
+    position: sticky;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,23 +190,80 @@ header{
 
 .update-card-ctn{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 2rem;
     margin-block: 2rem;
     padding: 0rem 0;
 }
 
 .update-card{
-    padding: 3rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    background-color: white;
+    width: 99%;
+    height: 90%;
+    padding: 2rem 1rem;
     border-radius: 1rem;
     transition: all .3s linear;
     font-size: 1rem;
-    color: var(--primary-txt-clr);
+    color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.update-card:hover{
+.update-card-container:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform: translateY(-10px);
     color: rgba(0, 0, 0, .8);
+}
+
+.update-card-container:hover .border{
+    background-color: var(--secondaryColor);
+}
+
+
+.card-icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+small{
+    color: rgba(0,0,0,.6);
+}
+
+.update-card-container{
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+
+.border{
+    width: 120%;
+    height: 100px;
+    margin: auto;
+    background-color: var(--primaryColor);
+    animation-name:rotate ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

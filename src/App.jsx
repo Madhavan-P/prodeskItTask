@@ -8,9 +8,11 @@ import P3 from "./assets/partner-3.avif";
 import P4 from "./assets/partner-4.avif";
 import P5 from "./assets/partner-5.avif";
 import P6 from "./assets/partner-6.webp";
-// import P7 from "./assets/partner-7.avif";
-// import P7 from "./assets/partner-4.avif";
-// import P8 from "./assets/partner-4.avif";
+
+import Job from "./assets/job.png";
+import Internship from "./assets/intern.png";
+import Product from "./assets/product.png";
+import Cubes from "./assets/cubes.png";
 
 function App() {
   return (
@@ -68,23 +70,47 @@ function App() {
       <section className="new-updates">
         <h2>OUR NEW UPDATES</h2>
         <div className="update-card-ctn">
-          <div className="update-card">
-            <p>Internships</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <img src={Internship} className="card-icon" />
+              <p>Internships</p>
+              <small>30/10/2025</small>
+            </div>
           </div>
-          <div className="update-card">
-            <p>Job</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <img src={Job} className="card-icon" />
+              <p>Job</p>
+              <small>28/10/2025</small>
+            </div>
           </div>
-          <div className="update-card">
-            <p>New Product</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <img src={Cubes} className="card-icon" />
+              <p>New Product</p>
+              <small>26/10/2025</small>
+            </div>
           </div>
-          <div className="update-card">
-            <p>New Service</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <p>New Service</p>
+            </div>
           </div>
-          <div className="update-card">
-            <p>New Information</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <p>New Information</p>
+            </div>
           </div>
-          <div className="update-card">
-            <p>New Branch</p>
+          <div className="update-card-container">
+            <div className="border"></div>
+            <div className="update-card">
+              <p>New Branch</p>
+            </div>
           </div>
         </div>
         <a className="btn secondaryBtn">More Updates</a>
