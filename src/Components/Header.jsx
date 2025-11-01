@@ -6,7 +6,7 @@ import Close from "../assets/close.png";
 const Header = () => {
   return (
     <header>
-      <h1 className="logo">PRODESK IT</h1>
+      <h1 className="logo company-name">PRODESK IT</h1>
       <img src={Menu} className="header-icon menu" />
       <img src={Close} className="header-icon close" />
       <div className="nav-menu">

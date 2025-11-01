@@ -15,6 +15,9 @@ import Job from "./assets/job.png";
 import Internship from "./assets/intern.png";
 import Product from "./assets/product.png";
 import Cubes from "./assets/cubes.png";
+import Services from "./assets/services.png";
+import Branch from "./assets/branch.png";
+import Information from "./assets/information.png";
 
 import Step01 from "./assets/step-1.jpeg";
 import Step01Icon from "./assets/step-1-icon-1.svg";
@@ -33,6 +36,7 @@ import leftArrowBlack from "./assets/left-arrow-black.svg";
 import rightArrowBlack from "./assets/right-arrow-black.svg";
 import leftArrowWhite from "./assets/left-arrow-white.svg";
 import rightArrowWhite from "./assets/right-arrow-white.svg";
+import AboutSection from "./Sections/AboutSection.jsx";
 
 function App() {
   const processCardList = [
@@ -165,19 +169,25 @@ function App() {
           <div className="update-card-container">
             <div className="border"></div>
             <div className="update-card">
+              <img src={Services} className="card-icon" />
               <p>New Service</p>
+              <small>24/10/2025</small>
             </div>
           </div>
           <div className="update-card-container">
             <div className="border"></div>
             <div className="update-card">
+              <img src={Information} className="card-icon" />
               <p>New Information</p>
+              <small>22/10/2025</small>
             </div>
           </div>
           <div className="update-card-container">
             <div className="border"></div>
             <div className="update-card">
+              <img src={Branch} className="card-icon" />
               <p>New Branch</p>
+              <small>20/10/2025</small>
             </div>
           </div>
         </div>
@@ -204,6 +214,7 @@ function App() {
           </div>
         </div>
       </section>
+      <AboutSection />
     </>
   );
 }

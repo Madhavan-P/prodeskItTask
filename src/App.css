@@ -185,3 +185,21 @@ img{
   width:20px;
   height: auto;
 }
+
+.company-name  {
+  background: linear-gradient(90deg, #14213D 0%, #FCA311 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-tags{
+  margin: 0 .5rem;
+  padding: 8px 2rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  color: var(--primaryColor);
+  border: 2px solid transparent;
+}
+.about-tags:hover{
+  border: 2px solid var(--secondaryColor);
+}
