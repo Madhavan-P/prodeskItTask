@@ -18,7 +18,7 @@
   --bg-color:#FFFFFF;
   --card-bg:#E5E5E5;
   --primary-txt-clr:#000000;
-  --secondary-txt-clr: rgba(0,0,0,.5);
+  --secondary-txt-clr: rgba(0,0,0,.7);
   --primary-font: Poppins;
   --secondary-font: Inter;
 
@@ -124,8 +124,9 @@ img{
 }
 
 .small-txt{
+  color: rgba(0,0,0,.8);
   font-size: .875rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .btn{
@@ -155,4 +156,32 @@ img{
   background-color: transparent;
   border-color: var(--secondaryColor);
   color: var(--secondaryColor);
+}
+
+.section{
+  margin-block: 3rem;
+}
+.section-title{
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.secondary-text{
+  color: rgba(0,0,0,.7);
+  font-size: 1.1rem;
+  
+}
+
+.margin-btn{
+  margin: 1rem 0;
+}
+
+.icon{
+  width: 40px;
+  height: auto;
+}
+
+.arrrow{
+  width:20px;
+  height: auto;
 }
