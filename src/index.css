@@ -434,3 +434,113 @@ small {
 .about-tag-ctn{
     text-align: center;
 }
+
+.about-us-card-ctn{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.about-us-card{
+    width: 100%;
+    /* max-width: 230px; */
+    /* height: 200px; */
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
+    color: var(--primary-txt-clr);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-us-card:hover  .admin-card-img img{
+    transform: scale(1.1);
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px; */
+}
+
+.admin-card-img {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    
+}
+
+.admin-card-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.4s linear;
+    transform: scale(1.03);
+}
+
+.arrow-icon{
+    margin-bottom: .5rem;
+    width: 30px; 
+    position: relative;
+}
+.arrow-icon img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: -.05rem;
+    bottom: -1.3rem;
+    animation: arrowAnimation 2s linear infinite;
+}
+
+
+@keyframes arrowAnimation{
+    20%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-.5rem);
+    }
+    80%{
+        transform: translateY(0);
+    }
+}
+
+.card-text{
+    position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
+        color: rgba(255,255,255,.6);
+        font-size: 1.1rem;
+        padding: 1rem;
+        opacity: 0;
+        transition: all .5s linear;
+        border-radius: 1rem;
+}
+
+.card-text{
+    text-align: left;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+
+.coreDetails-card{
+    position: relative;
+    overflow: hidden;
+}
+.coreDetails-card:hover .card-text {
+    bottom: -20%;
+    opacity: 1;
+    transform: scale(1);
+}
+
