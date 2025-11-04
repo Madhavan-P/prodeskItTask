@@ -58,7 +58,7 @@ html {
 }
 
 body{
-  padding: 1.5rem 0;
+  padding: 2rem;
   max-width: 1000px;
   font-size: 1rem;
   margin-inline:auto;
@@ -95,8 +95,13 @@ p,span,small{
 img{
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
-  
+}
+
+.none{
+  display: none;
+}
+.opacity{
+  opacity: 0;
 }
 
 .logo{

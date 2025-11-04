@@ -37,6 +37,7 @@ import rightArrowBlack from "./assets/right-arrow-black.svg";
 import leftArrowWhite from "./assets/left-arrow-white.svg";
 import rightArrowWhite from "./assets/right-arrow-white.svg";
 import AboutSection from "./Sections/AboutSection.jsx";
+import HeroSection from "./Sections/HeroSection.jsx";
 
 function App() {
   const processCardList = [
@@ -90,37 +91,19 @@ function App() {
   return (
     <>
       <Header />
-      <section className="hero-section">
-        <div className="hero-1">
-          <small className="small-txt">No:1 Company in Asia</small>
-          <h1>Transform Challenges into Breakthrough Solutions</h1>
-          <p>Shape the future with confidence</p>
-          <a className="btn primaryBtn">Find Out More</a>
-        </div>
-        <div className="hero-2">
-          <div className="hero-ctn  ctn01">
-            <img src={Hero01} />
-          </div>
-          <div className="hero-ctn ctn02">
-            <img src={Hero01} />
-          </div>
-          <div className="hero-ctn ctn03">
-            <img src={Hero01} />
-          </div>
-        </div>
-      </section>
+      <HeroSection />
       <section className="trust-section-ctn">
         <h4>Trusted by innovative organizations worldwide</h4>
         <div className="trust-section">
-          <div>
+          <div className="achievement-details-ctn">
             <h1>500+ </h1>
             <h4>Projects Delivered</h4>
           </div>
-          <div>
+          <div className="achievement-details-ctn">
             <h1>99%</h1>
             <h4>Client Satisfaction</h4>
           </div>
-          <div>
+          <div className="achievement-details-ctn">
             <h1>200+</h1>
             <h4>Industries Served</h4>
           </div>
@@ -131,12 +114,24 @@ function App() {
           <h4>Trusted by 13,000+ customers worldwide</h4>
         </div>
         <div className="partner-section">
-          <h1 className="item item1">DELL</h1>
-          <h1 className="item item2">HP</h1>
-          <h1 className="item item3">MICROSOFT</h1>
-          <h1 className="item item4">ZOHO</h1>
-          <h1 className="item item5">WIPRO</h1>
-          <h1 className="item item6">JCB</h1>
+          <div className="item item1">
+            <h1>DELL</h1>
+          </div>
+          <div className="item item2">
+            <h1>HP</h1>
+          </div>
+          <div className="item item3">
+            <h1>HCL</h1>
+          </div>
+          <div className="item item4">
+            <h1>ZOHO</h1>
+          </div>
+          <div className="item item5">
+            <h1>WIPRO</h1>
+          </div>
+          <div className="item item6">
+            <h1>JCB</h1>
+          </div>
         </div>
       </section>
       <section className="new-updates section">

@@ -10,6 +10,7 @@ import Vision from "../assets/vision.jpeg";
 import Mission from "../assets/mission-main.jpg";
 import Values from "../assets/values.jpg";
 import CoreDetailsCard from "../Components/CoreDetailsCard";
+import TestimonialCard from "../Components/TestimonialCard";
 
 const AboutSection = () => {
   const cardLeaders = [
@@ -46,6 +47,26 @@ const AboutSection = () => {
       text: "At Prodesk, we are more than just a software company. We are a team of dedicated professionals who are passionate about leveraging technology to drive innovation, quality, and value for our customers. Our core values guide everything we do, from developing cutting-edge solutions to providing exceptional customer service. Here's a closer look at the values that define us:",
     },
   ];
+  const cardTestimonialsDetails = [
+    {
+      letter: "M",
+      highlight: "Highly Recommend",
+      date: "Madhavan 23/08/2025",
+      text: "The team at Prodesk is incredibly knowledgeable and professional. They have been a pleasure to work with and have exceeded our expectations.",
+    },
+    {
+      letter: "D",
+      highlight: "Exceeding Expectation",
+      date: "Deepak 20/08/2025",
+      text: "Working with Prodesk has been a game-changer for our business. Their innovative solutions have helped us streamline our processes and improve efficiency.",
+    },
+    {
+      letter: "Y",
+      highlight: "Exceptionally brillient",
+      date: "Yalini 22/08/2025",
+      text: "We have been using Prodesk's software for several years now and have been consistently impressed with its performance and reliability",
+    },
+  ];
   return (
     <section className="about-section section">
       <h2 className="section-title">ABOUT US</h2>
@@ -70,6 +91,7 @@ const AboutSection = () => {
         </div>
         <CoreDetailsCard cardDetails={cardCoreDetails} />
         <AdminCard cardDetails={cardLeaders} />
+        <TestimonialCard cardDetails={cardTestimonialsDetails} />
       </div>
     </section>
   );
