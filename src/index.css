@@ -100,6 +100,7 @@ header {
 
 
 
+
 .hero-1{
     display: flex;
     flex-direction: column;
@@ -125,17 +126,185 @@ header {
 }
 
 .hero-2 {
+    width: 100%;
+    /* max-width: 400px; */
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+.hero-border {
+    position: absolute;
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    background-color: var(--primaryColor);
+    /* background: linear-gradient(90deg, #14213D 0%, #FCA311 60%); */
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.hero-section:hover .hero-border {
+    animation-play-state: running;
+    background-color: var(--secondaryColor);
 }
 
 .hero-ctn {
-    width: 100%;
-    max-width: 250px;
-    height: 300px;
-    border-radius: .5rem;
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
+.hero-img-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.hero-img-ctn {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-ctn img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.hero-section:hover .hero-img-ctn img{
+    opacity: 0;
+}
+
+.hero-letter {
+    position: absolute;
+    opacity: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease;
+    animation: showLetter 24s ease-in-out infinite;
+    animation-play-state: paused;
+}
+
+.hero-section:hover .hero-letter {
+    animation-play-state: running;
+}
+
+/* --- Letter Animation --- */
+@keyframes showLetter {
+
+    0%,
+    5% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+        filter: blur(2px);
+    }
+
+    10%,
+    20% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(0);
+    }
+
+    25%,
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.05);
+        filter: blur(2px);
+    }
+}
+
+/* --- Timing for each letter (non-overlapping & smooth) --- */
+.letter1 {
+    animation-delay: 0s;
+}
+
+/* P */
+.letter2 {
+    animation-delay: 3s;
+}
+
+/* R */
+.letter3 {
+    animation-delay: 6s;
+}
+
+/* O */
+.letter4 {
+    animation-delay: 9s;
+}
+
+/* D */
+.letter5 {
+    animation-delay: 12s;
+}
+
+/* E */
+.letter6 {
+    animation-delay: 15s;
+}
+
+/* S */
+.letter7 {
+    animation-delay: 18s;
+}
+
+/* K */
+
+/* --- After all letters finish, show logo again --- */
+.hero-section:hover .hero-img-ctn img {
+    animation: showLogo 24s ease-in-out infinite;
+}
+
+@keyframes showLogo {
+
+    0%,
+    80% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    90%,
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+
+
 
 @media (max-width:768px) {
     .hero-section{
@@ -346,7 +515,7 @@ small {
 
 
 .border {
-    width: 120%;
+    width: 200%;
     height: 100px;
     margin: auto;
     background-color: var(--primaryColor);
@@ -395,9 +564,11 @@ small {
 
 
 .left{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
     gap: 2rem;
 }
 
@@ -417,6 +588,7 @@ small {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 
@@ -443,7 +615,7 @@ small {
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    width: 800px;
+    width: 100%;
     height: 300px;
 }
 
@@ -500,6 +672,17 @@ small {
 }
 
 
+@media (max-width:767px) {
+    .process-card{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+        .card-left-bottom {
+            text-align: center;
+            align-items: center;
+        }
+}
+
 .about-us-ctn{
     margin: 3rem 0;
     display: flex;
@@ -508,7 +691,8 @@ small {
     gap: 2rem;
 }
 .img-ctn{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 .about-us-ctn img{
     width: 100%;
@@ -556,6 +740,16 @@ small {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+}
+
+@media (max-width:767px) {
+    .about-us-ctn{
+        flex-direction: column;
+    }
+    .about-ctn{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .about-us-card:hover  .admin-card-img img{
