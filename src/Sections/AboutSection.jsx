@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import AboutUs from "../assets/about-us-1.jpg";
 import founder from "../assets/founder.jpg";
@@ -13,6 +13,7 @@ import CoreDetailsCard from "../Components/CoreDetailsCard";
 import TestimonialCard from "../Components/TestimonialCard";
 
 const AboutSection = () => {
+  const [selectedTag, setSelectedTag] = useState(0);
   const cardLeaders = [
     {
       img: founder,
@@ -85,13 +86,32 @@ const AboutSection = () => {
       </div>
       <div>
         <div className="about-tag-ctn">
-          <a className="about-tags">ABOUT US</a>
-          <a className="about-tags">OUR LEADERS</a>
-          <a className="about-tags">TESTIMONIALS</a>
+          <a
+            className={`about-tags ${selectedTag === 0 ? "active" : ""}`}
+            onClick={() => setSelectedTag(0)}
+          >
+            ABOUT US
+          </a>
+          <a
+            className={`about-tags ${selectedTag === 1 ? "active" : ""}`}
+            onClick={() => setSelectedTag(1)}
+          >
+            OUR LEADERS
+          </a>
+          <a
+            className={`about-tags ${selectedTag === 2 ? "active" : ""}`}
+            onClick={() => setSelectedTag(2)}
+          >
+            TESTIMONIALS
+          </a>
         </div>
-        <CoreDetailsCard cardDetails={cardCoreDetails} />
-        <AdminCard cardDetails={cardLeaders} />
-        <TestimonialCard cardDetails={cardTestimonialsDetails} />
+        {selectedTag === 0 ? (
+          <CoreDetailsCard cardDetails={cardCoreDetails} />
+        ) : selectedTag === 1 ? (
+          <AdminCard cardDetails={cardLeaders} />
+        ) : (
+          <TestimonialCard cardDetails={cardTestimonialsDetails} />
+        )}
       </div>
     </section>
   );

@@ -546,20 +546,26 @@ small {
 }
 
 
-.process-card-ctn{
-    width: 100%;
 
-}
+/* .process-card-ctn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    
+} */
 
 .process-card{
+    width: 100%;
     text-align: left;
     padding: 2rem;
     display: flex;
     align-items: center;
     border-radius: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-block: 2rem;
-    
+    margin-block: 3rem;
+    flex-shrink: 0;
 }
 
 
@@ -726,10 +732,8 @@ small {
     padding: 1rem;
 }
 
-.about-us-card{
+.about-us-card {
     width: 100%;
-    /* max-width: 230px; */
-    /* height: 200px; */
     text-align: center;
     padding: 1.5rem;
     background: linear-gradient(135deg, var(--primaryColor), var(--secondaryColor));
@@ -740,6 +744,20 @@ small {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    opacity: 0;
+    animation: op 1s linear forwards;
+}
+
+@keyframes op {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width:767px) {
@@ -855,4 +873,214 @@ small {
 
 .card-text-testimonial a{
     margin-top: 2rem;
+}
+
+.section .secondary-text{
+    margin-bottom: 3rem;
+}
+
+.domain-card-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+
+}
+.domain-card{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    /* max-width: 400px; */
+    height: 270px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.domain-card:hover .domain-img-ctn img{
+    transform: scale(1.1);
+}
+
+.domain-text-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.domain-card p{
+    padding: 1rem;
+}
+
+.domain-img-ctn{
+    height: 100%;
+    overflow: hidden;
+}
+.domain-img-ctn img{
+    width: 100%;
+    transition: transform .4s linear;
+}
+
+.card-3{
+    width: 100%;
+}
+.card-3 .domain-card{
+    width: 100%;
+}
+
+.bg-1{
+    background-color: rgb(107, 191, 188);
+}
+.bg-2{
+    background-color: rgb(122, 197, 195);
+}
+.bg-3{
+    background-color: rgb(0, 173, 198);
+}
+.bg-4{
+    background-color: rgb(0, 156, 179);
+}
+.bg-5{
+    background-color: rgb(255, 193, 7);
+}
+.bg-6{
+    background-color: rgb(255, 131, 114);
+}
+.bg-7{
+    background-color: rgb(172, 216, 138);
+}
+.bg-8{
+    background-color: rgb(102, 102, 153);
+}
+
+@media (min-width:1024px) {
+    .domain-card-ctn {
+        flex-direction: row;
+    }
+}
+
+.service-card-ctn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-block: 3rem;
+    padding: 1rem;
+    width: 100%;
+    height: 200px;
+}
+
+.service-card{
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    transition: all .3s linear;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.service-card:hover {
+    transform: scale(1,1.2) translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 15px;
+    z-index: 4;
+}
+
+.service-card p{
+    font-size: 1.2rem;
+}
+
+
+.service-details {
+    position: absolute;
+    inset: 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow: hidden;
+}
+.service-details h2{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.service-details a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.service-card:hover .service-details {
+    opacity: 1;
+}
+
+.service-card:hover>img,
+.service-card:hover>p,
+.service-card:hover>small {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.s1{
+    background: url(./assets/service-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s2{
+    background: url(./assets/web-dev.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s3{
+    background: url(./assets/mob-dev.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s4{
+    background: url(./assets/data-dev.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s5{
+    background: url(./assets/it-dev.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s6{
+    background: url(./assets/cyber-dev.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s7{
+    background: url(./assets/cloud-dev.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s8{
+    background: url(./assets/logo-dev.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s9{
+    background: url(./assets/digital-dev.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

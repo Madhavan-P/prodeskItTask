@@ -59,7 +59,7 @@ html {
 
 body{
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 1200px;
   font-size: 1rem;
   margin-inline:auto;
 }
@@ -173,7 +173,7 @@ img{
 
 .secondary-text{
   color: rgba(0,0,0,.7);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   
 }
 
@@ -208,4 +208,12 @@ img{
 }
 .about-tags:hover{
   border: 2px solid var(--secondaryColor);
+}
+
+.active{
+  border: 2px solid var(--secondaryColor);
+}
+
+.centerAlign{
+  text-align: center;
 }
