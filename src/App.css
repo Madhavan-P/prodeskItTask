@@ -139,6 +139,7 @@ img{
   border: 2px solid;
   font-weight: 600;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .primaryBtn{

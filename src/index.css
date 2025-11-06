@@ -875,8 +875,8 @@ small {
     margin-top: 2rem;
 }
 
-.section .secondary-text{
-    margin-bottom: 3rem;
+.text{
+    margin-bottom: 2rem;
 }
 
 .domain-card-ctn{
@@ -966,7 +966,6 @@ small {
     margin-block: 3rem;
     padding: 1rem;
     width: 100%;
-    height: 200px;
 }
 
 .service-card{
@@ -983,6 +982,7 @@ small {
     justify-content: center;
     gap: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
 }
 
 .service-card:hover {
@@ -1008,16 +1008,12 @@ small {
     overflow: hidden;
 }
 .service-details h2{
+    padding: .5rem;
     width: 100%;
     background-color: black;
     color: white;
 }
 
-.service-details a{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 .service-card:hover .service-details {
     opacity: 1;
@@ -1083,4 +1079,76 @@ small {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.service-card-text{
+    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(0,0,0,0.6); */
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    font-size: .5rem;
+}
+
+.our-partner-section{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.our-item{
+    position: absolute;
+    left: calc(200px * 6);
+    /* left: 100%; */
+    width: 200px;
+    height: 150px;
+    animation: our-partner;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes our-partner{
+    to{
+        left: -200px;
+    }
+}
+
+
+.p2 .our-item{
+    position: absolute;
+    left: calc(200px * 6);
+    height: 150px;
+    width: 200px;
+    animation-direction: reverse;
+}
+
+
+.p-item1 {
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.p-item2 {
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.p-item3 {
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.p-item4 {
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.p-item5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.p-item6 {
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }

@@ -13,7 +13,7 @@ const DomainSection = () => {
   return (
     <section className="section centerAlign domain-section">
       <h2 className="section-title">OUR INDUSTRY EXPERTISE AND SOLUTIONS</h2>
-      <p className="secondary-text">
+      <p className="secondary-text text">
         Creating business value at the intersection of your industry
         transformation and today’s latest technology innovation.
       </p>

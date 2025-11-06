@@ -25,9 +25,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon01} className="card-icon" />
           <p>Software Development</p>
-          <small>30/10/2025</small>
           <div className="service-details s1">
             <h2>Software Development</h2>
+            <p className="service-card-text">
+              We craft reliable and scalable software tailored to your business
+              needs .
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -37,9 +40,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon02} className="card-icon" />
           <p>Web Development</p>
-          <small>30/10/2025</small>
           <div className="service-details s2">
             <h2>Web Development</h2>
+            <p className="service-card-text">
+              We design and build dynamic, user-friendly websites that deliver
+              seamless experiences.
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -49,9 +55,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon03} className="card-icon" />
           <p>App Development</p>
-          <small>30/10/2025</small>
           <div className="service-details s3">
             <h2>Mobile Development</h2>
+            <p className="service-card-text">
+              We create high-performing mobile apps with stunning UI and smooth
+              UX.
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -61,9 +70,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon04} className="card-icon" />
           <p>Data Analytics</p>
-          <small>30/10/2025</small>
           <div className="service-details s4">
             <h2>Data Analytics</h2>
+            <p className="service-card-text">
+              We turn complex data into actionable insights that drive smarter
+              decisions.
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -73,9 +85,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon05} className="card-icon" />
           <p>It Consulting</p>
-          <small>30/10/2025</small>
           <div className="service-details s5">
             <h2>It Consulting</h2>
+            <p className="service-card-text">
+              We provide expert IT consulting to help you optimize technology
+              and operations.
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -85,9 +100,11 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon06} className="card-icon" />
           <p>Cybersecurity</p>
-          <small>30/10/2025</small>
           <div className="service-details s6">
             <h2>Cybersecurity</h2>
+            {/* <p className="service-card-text">
+              We safeguard your digital assets with advanced security solutions.
+            </p> */}
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -97,9 +114,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon07} className="card-icon" />
           <p>Cloud Services</p>
-          <small>30/10/2025</small>
           <div className="service-details s7">
             <h2>Cloud Services</h2>
+            {/* <p className="service-card-text">
+              We enable seamless cloud migration and management for scalability
+              and efficiency.
+            </p> */}
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -109,9 +129,12 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon08} className="card-icon" />
           <p>Logo Design</p>
-          <small>30/10/2025</small>
           <div className="service-details s8">
-            <h2>Logo Design</h2>s
+            <h2>Logo Design</h2>
+            {/* <p className="service-card-text">
+              We design creative, memorable logos that capture your brand’s
+              essence.
+            </p> */}
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -121,9 +144,11 @@ const ServiceSection = () => {
         <div className="service-card">
           <img src={serviceIcon09} className="card-icon" />
           <p>Digital Marketing</p>
-          <small>30/10/2025</small>
           <div className="service-details s9">
             <h2>Digital Marketing</h2>
+            <p className="service-card-text">
+              We boost your online presence through smart digital strategies.
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -131,6 +156,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
+      <a className="btn secondaryBtn">Learn More</a>
     </section>
   );
 };
