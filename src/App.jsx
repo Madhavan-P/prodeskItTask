@@ -11,6 +11,10 @@ import UpdateSection from "./Sections/UpdateSection.jsx";
 import DomainSection from "./Sections/DomainSection.jsx";
 import ServiceSection from "./Sections/ServiceSection.jsx";
 import OurPartnerSection from "./Sections/OurPartnerSection.jsx";
+import WhyProdesk from "./Sections/WhyProdesk.jsx";
+import Oppertunities from "./Components/Oppertunities.jsx";
+import ContactUs from "./Sections/ContactUs.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -25,6 +29,10 @@ function App() {
       <DomainSection />
       <ServiceSection />
       <OurPartnerSection />
+      <WhyProdesk />
+      <Oppertunities />
+      <ContactUs />
+      {/* <Footer /> */}
     </>
   );
 }
