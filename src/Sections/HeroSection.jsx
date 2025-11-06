@@ -6,8 +6,13 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-1">
-        <small className="small-txt">No:1 Company in Asia</small>
-        <h1>Transform Challenges into Breakthrough Solutions</h1>
+        <small className="small-txt">
+          <i class="fas fa-trophy"></i>No:1 Company in Asia
+        </small>
+        <h1>
+          <span className="hero-highlight">Transform Challenges</span> into
+          Breakthrough Solutions
+        </h1>
         <p>Shape the future with confidence</p>
         <a className="btn primaryBtn">Find Out More</a>
       </div>

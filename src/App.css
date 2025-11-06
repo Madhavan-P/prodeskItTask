@@ -13,9 +13,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-  --primaryColor:#14213D;
+  --primaryColor: #6C63FF;
+  /* --primaryColor: #5B3E96; */
   --secondaryColor:#FCA311;
-  --bg-color:#FFFFFF;
+  --bgColor: #f9fbff;
   --card-bg:#E5E5E5;
   --primary-txt-clr:#000000;
   --secondary-txt-clr: rgba(0,0,0,.7);
@@ -62,7 +63,9 @@ body{
   max-width: 1200px;
   font-size: 1rem;
   margin-inline:auto;
-  background: linear-gradient(120deg, #e0e0e0, #ffffff);
+  /* background: linear-gradient(120deg, #e0e0e0, #ffffff); */
+  font-family: var(--secondary-font), sans-serif;
+  background-color: var(--bgColor);
 }
 
 body::-webkit-scrollbar {
@@ -134,14 +137,17 @@ img{
 }
 
 .navlinks{
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .small-txt{
-  color: rgba(0,0,0,.8);
-  font-size: .875rem;
-  font-weight: 600;
+  color: rgba(0,0,0,.7);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: var(--primary-font);
+  letter-spacing: .6px;
 }
 
 .btn{
