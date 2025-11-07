@@ -45,7 +45,7 @@ const AboutSection = () => {
     {
       img: Values,
       name: "Our Values",
-      text: "At Prodesk, we are more than just a software company. We are a team of dedicated professionals who are passionate about leveraging technology to drive innovation, quality, and value for our customers. Our core values guide everything we do, from developing cutting-edge solutions to providing exceptional customer service. Here's a closer look at the values that define us:",
+      text: "At Prodesk, we are more than just a software company. We are a team of dedicated professionals who are passionate about leveraging technology to drive innovation, quality, and value for our customers. Our core values guide everything we do, from developing cutting-edge solutions to providing exceptional customer service.",
     },
   ];
   const cardTestimonialsDetails = [
@@ -96,7 +96,7 @@ const AboutSection = () => {
             className={`about-tags ${selectedTag === 1 ? "active" : ""}`}
             onClick={() => setSelectedTag(1)}
           >
-            OUR LEADERS
+            OUR TEAM
           </a>
           <a
             className={`about-tags ${selectedTag === 2 ? "active" : ""}`}

@@ -24,7 +24,7 @@ const ServiceSection = () => {
       <div className="service-card-ctn">
         <div className="service-card">
           <img src={serviceIcon01} className="card-icon" />
-          <p>Software Development</p>
+          <p className="service-name"> Software Development</p>
           <div className="service-details s1">
             <h2>Software Development</h2>
             <p className="service-card-text">
@@ -39,7 +39,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon02} className="card-icon" />
-          <p>Web Development</p>
+          <p className="service-name">Web Development</p>
           <div className="service-details s2">
             <h2>Web Development</h2>
             <p className="service-card-text">
@@ -54,7 +54,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon03} className="card-icon" />
-          <p>App Development</p>
+          <p className="service-name">App Development</p>
           <div className="service-details s3">
             <h2>Mobile Development</h2>
             <p className="service-card-text">
@@ -69,7 +69,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon04} className="card-icon" />
-          <p>Data Analytics</p>
+          <p className="service-name">Data Analytics</p>
           <div className="service-details s4">
             <h2>Data Analytics</h2>
             <p className="service-card-text">
@@ -84,7 +84,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon05} className="card-icon" />
-          <p>It Consulting</p>
+          <p className="service-name">It Consulting</p>
           <div className="service-details s5">
             <h2>It Consulting</h2>
             <p className="service-card-text">
@@ -99,7 +99,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon06} className="card-icon" />
-          <p>Cybersecurity</p>
+          <p className="service-name">Cybersecurity</p>
           <div className="service-details s6">
             <h2>Cybersecurity</h2>
             {/* <p className="service-card-text">
@@ -113,7 +113,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon07} className="card-icon" />
-          <p>Cloud Services</p>
+          <p className="service-name">Cloud Services</p>
           <div className="service-details s7">
             <h2>Cloud Services</h2>
             {/* <p className="service-card-text">
@@ -128,7 +128,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon08} className="card-icon" />
-          <p>Logo Design</p>
+          <p className="service-name">Logo Design</p>
           <div className="service-details s8">
             <h2>Logo Design</h2>
             {/* <p className="service-card-text">
@@ -143,7 +143,7 @@ const ServiceSection = () => {
         </div>
         <div className="service-card">
           <img src={serviceIcon09} className="card-icon" />
-          <p>Digital Marketing</p>
+          <p className="service-name">Digital Marketing</p>
           <div className="service-details s9">
             <h2>Digital Marketing</h2>
             <p className="service-card-text">
