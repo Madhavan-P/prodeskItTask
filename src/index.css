@@ -1388,9 +1388,20 @@ small {
 }
 
 .why-card p{
+    width: 100%;
     color: rgba(0,0,0,.8);
 }
 
+@media (max-width:767px) {
+    .why-ctn {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .why-card {
+        width: 100%;
+    }
+}
 
 .opp-section {
     position: relative;
