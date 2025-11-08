@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 9px 2rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 3rem;
     background-color: rgba(255,255,255,0.5);
 }
@@ -121,6 +121,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
     z-index: 5;
 }
 
@@ -162,7 +164,7 @@ header {
 .hero-2 {
     width: 100%;
     max-width: 400px;
-    height: 400px;
+    height: 300px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -357,6 +359,9 @@ header {
     .hero-1 h1{
         text-align: center;
     }
+    .hero-img{
+        display: none;
+    }
 }
 
 .ctn02 {
@@ -371,7 +376,7 @@ header {
 
 .trust-section-ctn h4 {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -564,7 +569,7 @@ small {
     background-color: white;
     overflow: hidden;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 1rem;
     padding: 1rem 0;
 }
@@ -782,6 +787,9 @@ small {
 }
 
 .about-tag-ctn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
     text-align: center;
 }
 
@@ -915,6 +923,7 @@ small {
     align-items: center;
     justify-content: space-around;
     min-height: 500px;
+    border: 2px solid rgba(0, 0, 0,.1);
 }
 .coreCard-img{
     width: 100%;
@@ -929,13 +938,16 @@ small {
 }
 
 .admincard-img{
-   height: 300px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+   height: 200px;
    overflow: hidden;
 }
 .admincard-img img{
-    
     width: 100%;
    min-height: 400px;
+   object-fit: cover;
 }
 
 .coreDetails-card:hover .card-text {
@@ -944,9 +956,44 @@ small {
     transform: scale(1);
 }
 
-.admincard{
-    /* justify-content: center;
-    gap: 3rem; */
+.admincard00::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    /* z-index:21; */
+    background: url(./assets/our-founder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.admincard01::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    /* z-index:21; */
+    background: url(./assets/our-co-founder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.admincard02::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    /* z-index:21; */
+    background: url(./assets/our-hr.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .admincard .admincard-img img{
@@ -956,9 +1003,73 @@ small {
     transform: scale(1.05);
 }
 
+blockquote {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: auto;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    /* font-style: italic; */
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--primaryFont);
+}
+.sign{
+    position: absolute;
+    bottom: -180px;
+   width: 120px;
+}
+
 .test-card{
    justify-content: space-evenly;
-   /* gap: 1.8rem; */
+   position: relative;
+   border: 2px solid rgba(0, 0, 0, .1);
+}
+
+
+
+.card00::before{
+    position: absolute;
+   top:0;
+   content: '';
+   width: 100%;
+   height: 200px;
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+   /* z-index:21; */
+    background: url(./assets/test-7.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card01::before{
+    position: absolute;
+   top:0;
+   content: '';
+   width: 100%;
+   height: 200px;
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+   /* z-index:21; */
+    background: url(./assets/test-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card02::before{
+    position: absolute;
+   top:0;
+   content: '';
+   width: 100%;
+   height: 200px;
+   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+   /* z-index:21; */
+    background: url(./assets/test-6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .test-card h3{
     color: var(--primaryColor);
@@ -970,23 +1081,86 @@ small {
 }
 
 .test-profile{
-    border: 2px solid var(--primaryColor);
-    padding: 1.5rem 2.5rem;
+    /* over */
+    border: 2px solid rgba(0, 0, 0, .1);
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    color: var(--primaryColor);
+    /* box-shadow: inset rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            inset rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.test-border{
+    position: absolute;
+    width: 120%;
+    height: 50px;
+    background-color: var(--primaryColor);
+    pointer-events: none;
+    animation: spin 5s linear infinite;
+}
+
+.test-profile h1{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.test-date{
+    color: rgba(0, 0, 0, .8);
+    font-weight: 600;
+}
+.test-name{
+    color: var(--primaryColor);
+    text-align: center;
+    position: absolute;
+    top: 270px;
+}
+
+.test-name span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .7);
 }
 
 .star-ctn{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 340px;
 }
 .star{
     width: 20px;
     height: auto;
 }
 
-.card-text-testimonial a{
-    /* margin-top: 2rem; */
+.test-highlight{
+    position: absolute;
+    bottom: 80px;
 }
 
 .text{
@@ -1105,7 +1279,7 @@ small {
     z-index: 4;
 }
 
-.service-card p{
+.service-name{
     font-size: 1.2rem;
 }
 
@@ -1121,6 +1295,15 @@ small {
     transition: opacity 0.3s ease-in-out;
     overflow: hidden;       
 }
+
+/* .service-details::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+} */
+
 .service-details h2{
     padding: .5rem;
     width: 100%;
@@ -1140,7 +1323,12 @@ small {
     transition: opacity 0.3s ease-in-out;
 }
 
-.s1{
+.s1::before{
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
     background: url(./assets/service-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1196,7 +1384,10 @@ small {
 }
 
 .service-card-text{
+    font-size: 1rem;
     background-color: rgba(255,255,255,0.8);
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
     width: 100%;
     padding: .5rem;
     text-align: center;
@@ -1204,7 +1395,6 @@ small {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-70%);
-    font-size: .5rem;
 }
 
 .our-partner-section{
@@ -1412,12 +1602,11 @@ small {
     margin-right: -50vw;
     max-width: none;
     height: 300px;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     color: var(--primaryColor);
     overflow: hidden;
 }
@@ -1426,7 +1615,7 @@ small {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(./assets/explore-careers-bg-1.jpg) no-repeat center/cover;
+    background: url(./assets/explore-1.webp) no-repeat center/cover;
     transition: transform 1s ease;
     z-index: -1;
     transform: scale(1);
@@ -1524,6 +1713,7 @@ textarea{
 }
 .checkbox {
     font-size: 0.95rem;
+    line-height: 1.7;
     color: #333;
 }
 .checkbox input{

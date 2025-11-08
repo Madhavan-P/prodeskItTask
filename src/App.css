@@ -15,8 +15,9 @@
 :root{
   /* --primaryColor: #6C63FF; */
   --primaryColor: #5B3E96;
-  --secondaryColor:#F5B400;
-  /* --secondaryColor:#FCA311; */
+  /* --secondaryColor:#ffcd68; */
+  /* --secondaryColor:#F5B400; */
+  --secondaryColor:#FCA311;
   --bgColor: #f9fbff;
   --card-bg:#E5E5E5;
   --primary-txt-clr:#000000;
@@ -27,7 +28,6 @@
   --font-weight-large:700;
   --font-weight-medium:600;
   --font-weight-normal:500;
-    
 
 }
 
@@ -66,7 +66,7 @@ body{
   margin-inline:auto;
   /* background: linear-gradient(120deg, #e0e0e0, #ffffff); */
   font-family: var(--secondary-font), sans-serif;
-  background-color: var(--bgColor);
+  background-color: rgba(255,255,255.7);
 }
 
 body::-webkit-scrollbar {
@@ -118,9 +118,10 @@ img{
 }
 
 .logo{
-  background: linear-gradient(135deg, #FCA311 0%, #FFD43B 100%);
+  /* background: linear-gradient(135deg, #FCA311 0%, #FFD43B 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: var(--secondaryColor);
 }
 
 .hero-title{
@@ -212,9 +213,10 @@ img{
 }
 
 .company-name  {
-  background: linear-gradient(90deg, #14213D 0%, #FCA311 60%);
+  /* background: linear-gradient(90deg, #14213D 0%, #FCA311 60%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: var(--secondaryColor);
 }
 
 .about-tags{

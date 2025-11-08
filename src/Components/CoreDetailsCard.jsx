@@ -1,5 +1,4 @@
 import React from "react";
-// import upArrow from "../assets/up-black.svg";
 
 const CoreDetailsCard = ({ cardDetails }) => {
   return (
@@ -10,9 +9,6 @@ const CoreDetailsCard = ({ cardDetails }) => {
             <img src={details.img} alt={details.name} />
           </div>
           <h3>{details.name}</h3>
-          {/* <div className="arrow-icon">
-            <img src={upArrow} />
-          </div> */}
           <div className="card-text">
             <p>{details.text}</p>
             <a className="btn primaryBtn">Learn More</a>

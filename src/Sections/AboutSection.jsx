@@ -1,34 +1,52 @@
 import React, { useState } from "react";
 
 import AboutUs from "../assets/about-us-1.jpg";
-import founder from "../assets/founder.jpg";
-import coFounder from "../assets/co-founder.jpg";
-import hr from "../assets/hr.jpg";
+import founder from "../assets/our-founder.jpg";
+import coFounder from "../assets/our-co-founder.jpg";
+import hr from "../assets/our-hr.avif";
 import AdminCard from "../Components/AdminCard";
 
-import Vision from "../assets/vision.jpeg";
-import Mission from "../assets/mission-main.jpg";
-import Values from "../assets/values.jpg";
+// import Vision from "../assets/vision.jpeg";
+// import Mission from "../assets/mission-main.jpg";
+// import Values from "../assets/values.jpg";
+import Vision from "../assets/our-vision.jpg";
+import Mission from "../assets/our-mission.jpg";
+import Values from "../assets/our-values.webp";
+
 import CoreDetailsCard from "../Components/CoreDetailsCard";
 import TestimonialCard from "../Components/TestimonialCard";
+
+import sign1 from "../assets/sign-1.svg";
+import sign3 from "../assets/sign-2.svg";
+import sign2 from "../assets/sign-3.svg";
 
 const AboutSection = () => {
   const [selectedTag, setSelectedTag] = useState(0);
   const cardLeaders = [
     {
+      letter: "A",
       img: founder,
       role: "Founder",
       name: "Aarav Mehta",
+      quotes: `Innovation isn’t about ideas; it’s about turning ideas into meaningful impact.`,
+
+      sign: sign1,
     },
     {
+      letter: "A",
       img: coFounder,
       role: "Co Founder",
       name: "Ananya Sharma",
+      quotes: `Building technology is easy; building trust through technology is what defines us.`,
+      sign: sign2,
     },
     {
+      letter: "S",
       img: hr,
       role: "HR Manager",
       name: "Sneha Kapoor",
+      quotes: `A company grows when its people feel valued — culture is our strongest code.`,
+      sign: sign3,
     },
   ];
   const cardCoreDetails = [
@@ -51,18 +69,24 @@ const AboutSection = () => {
   const cardTestimonialsDetails = [
     {
       letter: "M",
+      name: "Mahima",
+      role: "Founder Of Averon Technologies",
       highlight: "Highly Recommend",
-      date: "Madhavan 23/08/2025",
+      date: "Mahima 23/08/2025",
       text: "The team at Prodesk is incredibly knowledgeable and professional. They have been a pleasure to work with and have exceeded our expectations.",
     },
     {
       letter: "D",
+      name: "Deepak",
+      role: "Founder Of Optivine Tech",
       highlight: "Exceeding Expectation",
       date: "Deepak 20/08/2025",
       text: "Working with Prodesk has been a game-changer for our business. Their innovative solutions have helped us streamline our processes and improve efficiency.",
     },
     {
       letter: "Y",
+      name: "Yalini",
+      role: "Founder Of Zyntrix Global",
       highlight: "Exceptionally brillient",
       date: "Yalini 22/08/2025",
       text: "We have been using Prodesk's software for several years now and have been consistently impressed with its performance and reliability",

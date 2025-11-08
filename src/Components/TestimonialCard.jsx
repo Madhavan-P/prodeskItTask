@@ -6,8 +6,16 @@ const TestimonialCard = ({ cardDetails }) => {
   return (
     <div className="about-us-card-ctn ">
       {cardDetails.map((details, index) => (
-        <div className="coreDetails-card test-card" key={index}>
-          <h1 className="test-profile">{details.letter}</h1>
+        <div className={`coreDetails-card test-card card0${index}`} key={index}>
+          {/* <img src={} /> */}
+          <div className="test-profile">
+            <div className="test-border"></div>
+            <h1>{details.letter}</h1>
+          </div>
+          <h3 className="test-name">
+            {details.name} <br />
+            <span>{details.role}</span>
+          </h3>
           <div className="star-ctn">
             <img src={star} className="star" />
             <img src={star} className="star" />
@@ -15,8 +23,8 @@ const TestimonialCard = ({ cardDetails }) => {
             <img src={star} className="star" />
             <img src={star} className="star" />
           </div>
-          <h3>{details.highlight}</h3>
-          <small>{details.date}</small>
+          <h3 className="test-highlight">{details.highlight}</h3>
+          <small className="test-date">{details.date}</small>
           <div className="card-text">
             <p>{details.text}</p>
             <a className="btn primaryBtn">Learn More</a>
