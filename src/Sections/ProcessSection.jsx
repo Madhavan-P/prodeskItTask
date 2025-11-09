@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import Step01 from "../assets/step-1.jpeg";
 import Step01Icon from "../assets/step-1-icon-1.svg";
-import Step02 from "../assets/step-2.webp";
+import Step02 from "../assets/analysis-1.webp";
 import Step02Icon from "../assets/step-2-icon.svg";
 import Step03 from "../assets/step-3.png";
 import Step03Icon from "../assets/step-3-icon.svg";
@@ -10,7 +10,7 @@ import Step04 from "../assets/step-4.jpg";
 import Step04Icon from "../assets/step-4-icon.svg";
 import Step05 from "../assets/step-5.jpg";
 import Step05Icon from "../assets/step-5-icon.svg";
-import Step06 from "../assets/step-6.jpeg";
+import Step06 from "../assets/deployment.jpg";
 import Step06Icon from "../assets/step-6-icon.svg";
 
 import leftArrowBlack from "../assets/left-arrow-black.svg";

@@ -32,7 +32,7 @@ function App() {
       <WhyProdesk />
       <Oppertunities />
       <ContactUs />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

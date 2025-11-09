@@ -53,16 +53,19 @@ const AboutSection = () => {
     {
       img: Vision,
       name: "Our Vision",
+      highlight: "Empowering Tomorrow Through Innovation",
       text: "At Prodesk, our vision is to be a global leader in innovative software solutions, driving positive change and shaping the future of technology. We envision a world where technology empowers individuals and organizations to achieve their full potential, driving growth, efficiency, and sustainability.",
     },
     {
       img: Mission,
       name: "Our Mission",
+      highlight: "Transforming Ideas into Scalable Digital Solutions",
       text: "At Prodesk, our mission is to empower businesses to succeed in the digital era by delivering technology solutions that foster efficiency, productivity, and sustainable growth. We aim to be a trusted partner, leveraging the power of innovation to tackle complex challenges and create new opportunities for our clients.",
     },
     {
       img: Values,
       name: "Our Values",
+      highlight: "Integrity, Innovation, and Impact",
       text: "At Prodesk, we are more than just a software company. We are a team of dedicated professionals who are passionate about leveraging technology to drive innovation, quality, and value for our customers. Our core values guide everything we do, from developing cutting-edge solutions to providing exceptional customer service.",
     },
   ];

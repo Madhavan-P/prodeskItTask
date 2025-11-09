@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const AdminCard = ({ cardDetails }) => {
   return (
@@ -10,7 +11,9 @@ const AdminCard = ({ cardDetails }) => {
         >
           <div className="test-profile">
             <div className="test-border"></div>
-            <h1>{details.letter}</h1>
+            <h1>
+              <img src={logo} />
+            </h1>
           </div>
           <h3 className="test-name">
             {details.name} <br />

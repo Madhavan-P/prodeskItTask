@@ -31,10 +31,6 @@ const ServiceSection = () => {
               We craft reliable and scalable software tailored to your business
               needs .
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card">

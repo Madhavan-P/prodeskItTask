@@ -171,7 +171,7 @@ const ContactUs = () => {
 
         <p className="contact-info">
           You can also email us directly at{" "}
-          <a href="mailto:info@persistent.com">info@persistent.com</a>
+          <a href="mailto:info@prodesk.in">info@prodesk.in</a>
         </p>
       </form>
     </section>

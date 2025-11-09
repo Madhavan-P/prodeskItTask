@@ -8,7 +8,7 @@ const Oppertunities = () => {
         Start your career at Persistent today and let’s unleash your full
         potential.
       </p>
-      <a className="btn primaryBtn">Explore</a>
+      <a className="btn primaryBtn">Explore Oppertunities</a>
     </div>
   );
 };
