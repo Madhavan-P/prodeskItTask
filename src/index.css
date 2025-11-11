@@ -161,7 +161,7 @@ header.scrolled {
 .hero-highlight{
     white-space: nowrap;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: var(--primaryFont);
     background-color: var(--primaryColor);
     /* background-color: var(--secondaryColor); */

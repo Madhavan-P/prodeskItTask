@@ -23,7 +23,7 @@ function App() {
       <Header />
       <HeroSection />
       <TrustSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <UpdateSection />
       <ProcessSection />
       <AboutSection />
