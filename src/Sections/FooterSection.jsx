@@ -6,7 +6,7 @@ import Call from "../assets/telephone.png";
 import Insta from "../assets/insta-light.svg";
 import Facebook from "../assets/facebook-light.svg";
 import Linkedin from "../assets/linkedin-light.svg";
-import Twitter from "../assets/Twitter.svg";
+import Twitter from "../assets/twitter.svg";
 
 import Play from "../assets/playstore.svg";
 import Mac from "../assets/apple.svg";
