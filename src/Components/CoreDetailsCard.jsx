@@ -22,7 +22,7 @@ const CoreDetailsCard = ({ cardDetails }) => {
           <h3 className="test-highlight">{details.highlight}</h3>
           <div className="card-text">
             <p>{details.text}</p>
-            <a className="btn primaryBtn">Learn More</a>
+            {/* <a className="btn primaryBtn">Learn More</a> */}
           </div>
         </div>
       ))}

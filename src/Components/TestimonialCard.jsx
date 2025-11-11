@@ -27,7 +27,7 @@ const TestimonialCard = ({ cardDetails }) => {
           <small className="test-date">{details.date}</small>
           <div className="card-text">
             <p>{details.text}</p>
-            <a className="btn primaryBtn">Learn More</a>
+            {/* <a className="btn primaryBtn">Learn More</a> */}
           </div>
           {/* <p>{details.text}</p>
           <a className="btn primaryBtn">Learn More</a> */}
