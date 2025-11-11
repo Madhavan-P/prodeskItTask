@@ -437,6 +437,7 @@ header.scrolled {
     /* display: flex;
     align-items: center;
     justify-content: center; */
+
     mask-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 1) 50%,
@@ -455,42 +456,43 @@ header.scrolled {
 }
 
 .item {
+    flex-shrink: 0;
     position: absolute;
-    left: calc(200px * 6);
+    left: calc(200px * 5);
     width: 200px;
     height: 50px;
     animation-name: scrollLeft;
-    animation-duration: 30s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    /* margin-right: 1rem; */
-    
-    color: rgba(0, 0, 0, .7);
+        /* display: flex;
+        align-items: center;
+    color: rgba(0, 0, 0, .7); */
 }
 
 
 .item1 {
-    animation-delay: calc((30s / 6) * (6 - 1) * -1);
+    animation-delay: calc((20s / 6) * (6 - 1) * -1);
 }
 
 .item2 {
-    animation-delay: calc((30s / 6) * (6 - 2) * -1);
+    animation-delay: calc((20s / 6) * (6 - 2) * -1);
 }
 
 .item3 {
-    animation-delay: calc((30s / 6) * (6 - 3) * -1);
+    animation-delay: calc((20s / 6) * (6 - 3) * -1);
 }
 
 .item4 {
-    animation-delay: calc((30s / 6) * (6 - 4) * -1);
+    animation-delay: calc((20s / 6) * (6 - 4) * -1);
 }
 
 .item5 {
-    animation-delay: calc((30s / 6) * (6 - 5) * -1);
+    animation-delay: calc((20s / 6) * (6 - 5) * -1);
 }
 
 .item6 {
-    animation-delay: calc((30s / 6) * (6 - 6) * -1);
+    animation-delay: calc((20s / 6) * (6 - 6) * -1);
 }
 
 @media (max-width:767px) {
@@ -2169,7 +2171,7 @@ textarea{
 }
 
 .foot-text{
-    font-size: .9rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, .7);
 }
 
@@ -2219,7 +2221,7 @@ textarea{
 }
 
 .foot-col-2 a li{
-    font-size: .9rem;
+    font-size: 1rem;
     /* font-size: 1rem; */
     color: rgba(0,0,0,.7);
     font-weight: 600;
@@ -2234,7 +2236,7 @@ textarea{
 
 .foot-col-3{
     padding: 2rem 0%;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .foot-title{
@@ -2314,7 +2316,7 @@ textarea{
     /* background-color: rgba(91, 62, 150, .2); */
     /* padding: .6rem 2rem; */
     border-radius: 10px;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .link-ctn{
@@ -2325,7 +2327,7 @@ textarea{
 }
 
 .link-ctn li{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .link-line {
@@ -2359,7 +2361,7 @@ textarea{
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    font-size: .9rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, .7);
     font-weight: 600;
 }
