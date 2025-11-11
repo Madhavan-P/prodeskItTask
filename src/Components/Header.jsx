@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Menu from "../assets/menu.png";
 
@@ -9,9 +9,23 @@ import Close from "../assets/close.png";
 const Header = () => {
   const MenuList = ["Home", "Our Process", "Services", "About Us"];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const [navList, setNavList] = useState(false);
   return (
-    <header>
+    <header className={isScrolled ? "header scrolled" : "header"}>
       <h1 className="logo company-name">PRODESK IT</h1>
       <NavList List={MenuList} Class="nav-menu" />
       <div className="hanberger-menus">

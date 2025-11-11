@@ -15,6 +15,7 @@ import WhyProdesk from "./Sections/WhyProdesk.jsx";
 import Oppertunities from "./Components/Oppertunities.jsx";
 import ContactUs from "./Sections/ContactUs.jsx";
 import Footer from "./Components/Footer.jsx";
+import FooterSection from "./Sections/FooterSection.jsx";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
       <WhyProdesk />
       <Oppertunities />
       <ContactUs />
-      <Footer />
+      <FooterSection />
     </>
   );
 }

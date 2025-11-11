@@ -98,9 +98,9 @@ const ServiceSection = () => {
           <p className="service-name">Cybersecurity</p>
           <div className="service-details s6">
             <h2>Cybersecurity</h2>
-            {/* <p className="service-card-text">
+            <p className="service-card-text">
               We safeguard your digital assets with advanced security solutions.
-            </p> */}
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -112,10 +112,10 @@ const ServiceSection = () => {
           <p className="service-name">Cloud Services</p>
           <div className="service-details s7">
             <h2>Cloud Services</h2>
-            {/* <p className="service-card-text">
+            <p className="service-card-text">
               We enable seamless cloud migration and management for scalability
               and efficiency.
-            </p> */}
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
@@ -127,10 +127,10 @@ const ServiceSection = () => {
           <p className="service-name">Logo Design</p>
           <div className="service-details s8">
             <h2>Logo Design</h2>
-            {/* <p className="service-card-text">
+            <p className="service-card-text">
               We design creative, memorable logos that capture your brand’s
               essence.
-            </p> */}
+            </p>
             {/* <div className="btn primaryBtn scroll-arrow">
               <img src={RightArrowBlue} className="arrrow a-blue" />
               <img src={RightArrowWhite} className="arrrow a-white" />
