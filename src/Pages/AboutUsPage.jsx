@@ -376,10 +376,8 @@ const AboutUsPage = () => {
             stronger online presence. We partner with you at every stage to
             deliver results that matter.
           </p>
-          {/* <a className="btn primaryBtn margin-btn">Learn More</a> */}
         </div>
       </div>
-      {/* --------- Experts Section  --------- */}
 
       <div className="about-page-tags">
         <a

@@ -31,7 +31,6 @@ const EmployeeCard = ({ cardDetails }) => {
           >
             {details.skills}
           </p>
-          {/* <img src={details.sign} className="sign" /> */}
         </div>
       ))}
     </div>

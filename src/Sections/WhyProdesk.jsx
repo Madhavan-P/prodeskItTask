@@ -28,8 +28,6 @@ const WhyProdesk = () => {
               With our project management expertise, you can be confident that
               your engineering project will be completed on schedule and within
               budget.
-              {/* From planning and resource management to full oversight, we
-            work alongside you to guarantee success at every stage. */}
             </p>
           </div>
         </div>

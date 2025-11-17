@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Job from "../components/Job.jsx";
-import Internship from "../components/Internship.jsx";
+import Job from "../Components/Job.jsx";
+import Internship from "../Components/Internship.jsx";
 
 const CareersPage = () => {
   const [selectedJobType, setSelectedJobType] = useState("job");

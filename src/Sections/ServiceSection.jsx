@@ -44,10 +44,6 @@ const ServiceSection = () => {
               We design and build dynamic, user-friendly websites that deliver
               seamless experiences.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card" onClick={() => navigate("/our-services")}>
@@ -59,10 +55,6 @@ const ServiceSection = () => {
               We create high-performing mobile apps with stunning UI and smooth
               UX.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card" onClick={() => navigate("/our-services")}>
@@ -74,10 +66,6 @@ const ServiceSection = () => {
               We turn complex data into actionable insights that drive smarter
               decisions.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card" onClick={() => navigate("/our-services")}>
@@ -89,10 +77,6 @@ const ServiceSection = () => {
               We provide expert IT consulting to help you optimize technology
               and operations.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card" onClick={() => navigate("/our-services")}>
@@ -103,10 +87,6 @@ const ServiceSection = () => {
             <p className="service-card-text">
               We safeguard your digital assets with advanced security solutions.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
         <div className="service-card" onClick={() => navigate("/our-services")}>
@@ -139,10 +119,6 @@ const ServiceSection = () => {
             <p className="service-card-text">
               We boost your online presence through smart digital strategies.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
       </div>

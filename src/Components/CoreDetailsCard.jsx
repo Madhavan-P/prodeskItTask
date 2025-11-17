@@ -17,12 +17,10 @@ const CoreDetailsCard = ({ cardDetails }) => {
           </div>
           <h3 className="test-name">
             {details.name} <br />
-            {/* <span>{details.role}</span> */}
           </h3>
           <h3 className="test-highlight">{details.highlight}</h3>
           <div className="card-text">
             <p>{details.text}</p>
-            {/* <a className="btn primaryBtn">Learn More</a> */}
           </div>
         </div>
       ))}

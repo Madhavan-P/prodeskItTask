@@ -1,5 +1,4 @@
 import React from "react";
-// import Hero01 from "../assets/hero-1.avif";
 import Hero01 from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
@@ -21,9 +20,6 @@ const HeroSection = () => {
           <a className="btn primaryBtn" onClick={() => navigate("/about-us")}>
             Find Out More
           </a>
-          {/* <a href="#contact" className="btn secondaryBtn">
-            Talk to Our Experts
-          </a> */}
         </div>
       </div>
       <div className="hero-2">
@@ -48,38 +44,6 @@ const HeroSection = () => {
             <p className="abbr l6">Strategy</p>
             <p className="abbr l7">Knowledge</p>
           </div>
-
-          {/* {/* <div className="hero-img-ctn">
-            <img src={Hero01} />
-            <div className="hero-letter letter1">
-              <h1>P</h1>
-              <p>Precision</p>
-            </div>
-            <div className="hero-letter letter2">
-              <h1>R</h1>
-              <p>Reliability</p>
-            </div>
-            <div className="hero-letter letter3">
-              <h1>O</h1>
-              <p>Optimization</p>
-            </div>
-            <div className="hero-letter letter4">
-              <h1>D</h1>
-              <p>Dynamism</p>
-            </div>
-            <div className="hero-letter letter5">
-              <h1>E</h1>
-              <p>Excellence</p>
-            </div>
-            <div className="hero-letter letter6">
-              <h1>S</h1>
-              <p>Strategy</p>
-            </div>
-            <div className="hero-letter letter7">
-              <h1>K</h1>
-              <p>Knowledge</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import DomainDetailsPage from "../Components/DomainDetailsPage";
 
 import Domain1 from "../assets/domain-card-1.png";
@@ -73,7 +73,6 @@ const DomainSection = () => {
         </div>
       </div>
 
-      {/* THIRD ROW */}
       <div className="domain-card-ctn">
         <div
           className="domain-card bg-7"
