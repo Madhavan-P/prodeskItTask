@@ -11,6 +11,7 @@ import Twitter from "../assets/twitter.svg";
 import Play from "../assets/playstore.svg";
 import Mac from "../assets/apple.svg";
 
+import { NavLink } from "react-router-dom";
 const FooterSection = () => {
   return (
     <section className="section footer-section">
@@ -38,18 +39,18 @@ const FooterSection = () => {
             <span>Our</span>
             Services
           </h2>
-          <a>
+          <NavLink to="/our-services">
             <li>Software Development</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/our-services">
             <li>Data Analytics</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/our-services">
             <li>Cloud Services</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/our-services">
             <li>Cyber Security</li>
-          </a>
+          </NavLink>
         </div>
         <div className="foot-col-2">
           <h2>
@@ -57,44 +58,55 @@ const FooterSection = () => {
             <span>Quick</span>
             Links
           </h2>
-          <a>
+          <NavLink to="/home">
             <li>Home</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/about-us">
             <li>About Us</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/our-process">
             <li>Our Process</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/careers">
             <li>Careers</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/contact-us">
             <li>Contact Us</li>
-          </a>
-          <a>
+          </NavLink>
+          <NavLink to="/faq">
             <li>FAQ</li>
-          </a>
+          </NavLink>
         </div>
         <div className="foot-col-3">
           <h1 className="foot-title">PRODESK IT</h1>
           <p className="office">
-            <span>Main Office :</span> Noida, Uttar Pradesh
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=91springboard,+Vyapar+Marg,+Noida"
+              target="_blank"
+              rel="noopener noreferrer"
+              // className="contact-link"
+            >
+              <span>Main Office :</span> Noida, Uttar Pradesh
+            </a>
           </p>
-          <p className="wh-ctn">
+          <div className="wh-ctn">
             <img src={Wh} />
             <div className="wh-text-ctn">
               <h4>Our Bussiness Hours</h4>
               <p>Mon - Fri / 09:00 - 06:00</p>
             </div>
-          </p>
-          <p className="wh-ctn">
+          </div>
+          <div className="wh-ctn">
             <img src={Call} />
             <div className="wh-text-ctn">
               <h4>Feel Free to Call</h4>
-              <p>8851407750</p>
+              <p>
+                <a href="tel:8851407750" className="contact-link">
+                  8851407750
+                </a>
+              </p>
             </div>
-          </p>
+          </div>
         </div>
       </div>
       <div className="client-approach-text">
@@ -107,25 +119,24 @@ const FooterSection = () => {
       <div className="footer-row-2">
         <div className="media-ctn">
           <div className="social-media-icon">
-            <img
-              src={Facebook}
-              className="icon"
-              title="Facebook"
-              alt="Facebook"
-            />
-            <img src={Twitter} className="icon" title="Twitter" alt="Twitter" />
-            <img
-              src={Linkedin}
-              className="icon"
-              title="LinkedIn"
-              alt="LinkedIn"
-            />
-            <img
-              src={Insta}
-              className="icon"
-              title="Instagram"
-              alt="Instagram"
-            />
+            <a href="https://www.instagram.com/prodeskit/" target="_blank">
+              <img src={Facebook} className="icon" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/sconso-resources/"
+              target="_blank"
+            >
+              <img src={Twitter} className="icon" alt="Twitter" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/sconso-resources/"
+              target="_blank"
+            >
+              <img src={Linkedin} className="icon" alt="LinkedIn" />
+            </a>
+            <a href="https://www.instagram.com/prodeskit/" target="_blank">
+              <img src={Insta} className="icon" alt="Instagram" />
+            </a>
           </div>
           <div className="app-ctn">
             <div className="wh-ctn ctn">
@@ -145,21 +156,21 @@ const FooterSection = () => {
           </div>
         </div>
         <div className="link-ctn foot-col-2">
-          <a>
+          <NavLink to="/home">
             <li>Home</li>
-          </a>
+          </NavLink>
           <div className="link-line"></div>
-          <a>
+          <NavLink to="/about-us">
             <li>About Us</li>
-          </a>
+          </NavLink>
           <div className="link-line"></div>
-          <a>
+          <NavLink to="/contact-us">
             <li>Contact Us</li>
-          </a>
+          </NavLink>
           <div className="link-line"></div>
-          <a>
+          <NavLink to="/faq">
             <li>FAQ</li>
-          </a>
+          </NavLink>
         </div>
       </div>
       <div className="foot-row-3">

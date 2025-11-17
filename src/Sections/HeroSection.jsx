@@ -1,8 +1,10 @@
 import React from "react";
 // import Hero01 from "../assets/hero-1.avif";
 import Hero01 from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="hero-section">
       <img src={Hero01} className="hero-img" />
@@ -16,7 +18,9 @@ const HeroSection = () => {
         </h1>
         <p>Shape the future with confidence</p>
         <div>
-          <a className="btn primaryBtn">Find Out More</a>
+          <a className="btn primaryBtn" onClick={() => navigate("/about-us")}>
+            Find Out More
+          </a>
           {/* <a href="#contact" className="btn secondaryBtn">
             Talk to Our Experts
           </a> */}

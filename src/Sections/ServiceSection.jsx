@@ -12,8 +12,10 @@ import serviceIcon06 from "../assets/cyber-icon.png";
 import serviceIcon07 from "../assets/cloud-icon.png";
 import serviceIcon08 from "../assets/logo-icon.png";
 import serviceIcon09 from "../assets/digital-icon.png";
+import { useNavigate } from "react-router-dom";
 
 const ServiceSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="section centerAlign">
       <h1 className="section-title">Our Services</h1>
@@ -22,7 +24,7 @@ const ServiceSection = () => {
         turn digital challenges into opportunities.
       </p>
       <div className="service-card-ctn">
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon01} className="card-icon" />
           <p className="service-name"> Software Development</p>
           <div className="service-details s1">
@@ -33,7 +35,7 @@ const ServiceSection = () => {
             </p>
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon02} className="card-icon" />
           <p className="service-name">Web Development</p>
           <div className="service-details s2">
@@ -48,7 +50,7 @@ const ServiceSection = () => {
             </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon03} className="card-icon" />
           <p className="service-name">App Development</p>
           <div className="service-details s3">
@@ -63,7 +65,7 @@ const ServiceSection = () => {
             </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon04} className="card-icon" />
           <p className="service-name">Data Analytics</p>
           <div className="service-details s4">
@@ -78,7 +80,7 @@ const ServiceSection = () => {
             </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon05} className="card-icon" />
           <p className="service-name">It Consulting</p>
           <div className="service-details s5">
@@ -93,7 +95,7 @@ const ServiceSection = () => {
             </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon06} className="card-icon" />
           <p className="service-name">Cybersecurity</p>
           <div className="service-details s6">
@@ -107,7 +109,7 @@ const ServiceSection = () => {
             </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon07} className="card-icon" />
           <p className="service-name">Cloud Services</p>
           <div className="service-details s7">
@@ -116,13 +118,9 @@ const ServiceSection = () => {
               We enable seamless cloud migration and management for scalability
               and efficiency.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon08} className="card-icon" />
           <p className="service-name">Logo Design</p>
           <div className="service-details s8">
@@ -131,13 +129,9 @@ const ServiceSection = () => {
               We design creative, memorable logos that capture your brand’s
               essence.
             </p>
-            {/* <div className="btn primaryBtn scroll-arrow">
-              <img src={RightArrowBlue} className="arrrow a-blue" />
-              <img src={RightArrowWhite} className="arrrow a-white" />
-            </div> */}
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate("/our-services")}>
           <img src={serviceIcon09} className="card-icon" />
           <p className="service-name">Digital Marketing</p>
           <div className="service-details s9">
@@ -152,7 +146,9 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-      <a className="btn secondaryBtn">Learn More</a>
+      <a className="btn secondaryBtn" onClick={() => navigate("/our-services")}>
+        Learn More
+      </a>
     </section>
   );
 };

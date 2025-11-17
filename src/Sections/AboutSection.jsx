@@ -19,6 +19,7 @@ import TestimonialCard from "../Components/TestimonialCard";
 import sign1 from "../assets/sign-1.svg";
 import sign3 from "../assets/sign-2.svg";
 import sign2 from "../assets/sign-3.svg";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
   const [selectedTag, setSelectedTag] = useState(0);
@@ -95,6 +96,7 @@ const AboutSection = () => {
       text: "We have been using Prodesk's software for several years now and have been consistently impressed with its performance and reliability",
     },
   ];
+  const navigate = useNavigate();
   return (
     <section className="about-section section">
       <h2 className="section-title">ABOUT US</h2>
@@ -108,7 +110,12 @@ const AboutSection = () => {
             Welcome to Prodesk, a leading provider of innovative software
             solutions for businesses worldwide.
           </p>
-          <a className="btn primaryBtn margin-btn">Learn More</a>
+          <a
+            className="btn primaryBtn margin-btn"
+            onClick={() => navigate("/about-us")}
+          >
+            Learn More
+          </a>
         </div>
       </div>
       <div>

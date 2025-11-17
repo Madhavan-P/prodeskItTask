@@ -141,6 +141,7 @@ img{
 .navlinks{
   font-size: 1.1rem;
   font-weight: 600;
+  color: rgba(0,0,0,1);
 }
 
 .small-txt{
@@ -232,9 +233,22 @@ img{
 }
 
 .active{
-  border: 2px solid var(--secondaryColor);
+  color: var(--secondaryColor);
 }
+
 
 .centerAlign{
   text-align: center;
+}
+
+.selectedTag {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: white;
+}
+
+.selectedTagCareers {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+  color: white;
 }

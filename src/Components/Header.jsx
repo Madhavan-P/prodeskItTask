@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Menu from "../assets/menu.png";
 
@@ -8,26 +8,17 @@ import Close from "../assets/close.png";
 
 const Header = () => {
   const MenuList = ["Home", "Our Process", "Services", "About Us"];
-
-  const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const MenuListLink = ["home", "our-process", "our-services", "about-us"];
 
   const [navList, setNavList] = useState(false);
+
+  function handleNavBar() {
+    setNavList(false);
+  }
   return (
-    <header className={isScrolled ? "header scrolled" : "header"}>
+    <header className="header">
       <h1 className="logo company-name">PRODESK IT</h1>
-      <NavList List={MenuList} Class="nav-menu" />
+      <NavList List={MenuList} Class="nav-menu" links={MenuListLink} />
       <div className="hanberger-menus">
         {navList ? (
           <img
@@ -44,7 +35,12 @@ const Header = () => {
         )}
       </div>
 
-      <NavList List={MenuList} Class={`mobile-nav ${navList ? "" : "none"}`} />
+      <NavList
+        List={MenuList}
+        Class={`mobile-nav ${navList ? "" : "none"}`}
+        links={MenuListLink}
+        fn={handleNavBar}
+      />
     </header>
   );
 };

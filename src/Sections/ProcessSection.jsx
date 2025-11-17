@@ -18,8 +18,10 @@ import rightArrowBlack from "../assets/right-arrow-black.svg";
 import leftArrowWhite from "../assets/left-arrow-white.svg";
 import rightArrowWhite from "../assets/right-arrow-white.svg";
 import ProcessCard from "../Components/ProcessCard";
+import { useNavigate } from "react-router-dom";
 
 const ProcessSection = () => {
+  const navigate = useNavigate();
   const processCardList = [
     {
       icon: Step01Icon,
@@ -27,8 +29,8 @@ const ProcessSection = () => {
       title: "PLANNING",
       secondTitle: "Define the problem and set clear objectives",
       text: `Step 1 of our 6-phase process. We guide your organization through
-            each critical stage, ensuring comprehensive solutions and measurable
-            outcomes.`,
+              each critical stage, ensuring comprehensive solutions and measurable
+              outcomes.`,
     },
     {
       icon: Step02Icon,
@@ -36,8 +38,8 @@ const ProcessSection = () => {
       title: "ANALYSIS",
       secondTitle: "Assess resources, constraints, and opportunities",
       text: `Step 2 of our 6-phase process. We guide your organization
-                  through each critical stage, ensuring comprehensive solutions
-                  and measurable outcomes.`,
+                    through each critical stage, ensuring comprehensive solutions
+                    and measurable outcomes.`,
     },
     {
       icon: Step03Icon,
@@ -94,7 +96,12 @@ const ProcessSection = () => {
       </p>
       <ProcessCard details={processCardList[CardDetails]} />
       <div className="process-card-ctrl">
-        <a className="btn secondaryBtn">Learn More</a>
+        <a
+          className="btn secondaryBtn"
+          onClick={() => navigate("/our-process")}
+        >
+          Learn More
+        </a>
         <div className="ctrl-ctn">
           <a
             className="scroll-arrow"

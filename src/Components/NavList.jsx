@@ -1,17 +1,26 @@
 import React from "react";
-
 import GetStartedBtn from "./GetStartedBtn";
+import { NavLink } from "react-router-dom";
 
-const NavList = ({ List, Class }) => {
+const NavList = ({ List, Class, links, fn }) => {
+  console.log(links[2]);
   return (
-    <div className={Class}>
+    <ul className={Class}>
       {List.map((list, index) => (
-        <li key={index} className="navlinks">
-          {list}
-        </li>
+        <NavLink
+          key={index}
+          className="navlinks"
+          to={links[index]}
+          style={{ cursor: "pointer" }}
+          onClick={fn}
+        >
+          <li>{list}</li>
+        </NavLink>
       ))}
-      <GetStartedBtn />
-    </div>
+      <li>
+        <GetStartedBtn fn={fn} />
+      </li>
+    </ul>
   );
 };
 
