@@ -49,7 +49,7 @@ const GetStartedBtn = ({ fn }) => {
         <a
           className="btn primaryBtn"
           onClick={() => {
-            if (fn) fn(); // run fn (optional)
+            if (fn) fn();
             navigate("/login");
           }}
         >
